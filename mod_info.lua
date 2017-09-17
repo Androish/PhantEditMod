@@ -1,8 +1,8 @@
-name = "AAAATest"
-uid = "16e610a"
-version = 6
+name = "PhantModEdit"
+uid = "198732jhisad3rf"
+version = 1
 description = ""
-author = "Ghaleon & Varaxis"
+author = "Androish"
 icon = "/mods/T3EngStationsFAF/T3EngStationsFAF.png"
 url = "http://forums.gaspowered.com/viewtopic.php?t=31020"
 selectable = true
