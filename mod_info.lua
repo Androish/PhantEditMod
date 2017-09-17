@@ -1,7 +1,7 @@
 name = "AAAATest"
 uid = "16e610a"
 version = 6
-description = "T3 Engineering Stations for all factions, rebalanced and bug fixed for FAF"
+description = ""
 author = "Ghaleon & Varaxis"
 icon = "/mods/T3EngStationsFAF/T3EngStationsFAF.png"
 url = "http://forums.gaspowered.com/viewtopic.php?t=31020"
