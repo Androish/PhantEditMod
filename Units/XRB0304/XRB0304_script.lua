@@ -1,5 +1,5 @@
 -----------------------------------------------------------------
--- File     :  /cdimage/units/XRB0204/XRB0204_script.lua
+-- File     :  /cdimage/units/XRB0304/XRB0304_script.lua
 -- Author(s):  Dru Staltman, Gordon Duclos
 -- Summary  :  Cybran Engineering tower
 -- Copyright © 2007 Gas Powered Games, Inc.  All rights reserved.
@@ -7,9 +7,10 @@
 
 local CConstructionStructureUnit = import('/lua/cybranunits.lua').CConstructionStructureUnit
 
-XRB0204 = Class(CConstructionStructureUnit) {
+XRB0304 = Class(CConstructionStructureUnit) {
     OnStartBeingBuilt = function(self, builder, layer)
         CConstructionStructureUnit.OnStartBeingBuilt(self, builder, layer)
+
         local target = self:GetBlueprint().General.UpgradesFrom
 
         -- Check if we're really being built on top of another unit (as an upgrade).
@@ -20,19 +21,13 @@ XRB0204 = Class(CConstructionStructureUnit) {
         for k, v in candidates do
             if target == v:GetBlueprint().BlueprintId then
                 self:HideBone('xrb0304', true)
-                self:ShowBone('TurretT2', true)
-                self:ShowBone('Door2_B02', true)
-                self:ShowBone('B02', true)
-                self:ShowBone('Attachpoint02', true)
+                self:ShowBone('TurretT3', true)
+                self:ShowBone('Door3_B03', true)
+                self:ShowBone('B03', true)
+                self:ShowBone('Attachpoint03', true)
                 return
             end
         end
-    end,
-
-    OnStopBeingBuilt = function(self, builder, layer)
-        CConstructionStructureUnit.OnStopBeingBuilt(self, builder, layer)
-
-        self:ShowBone('xrb0304', true)
     end,
 
     OnStartBuild = function(self, unitBeingBuilt, order)
@@ -55,4 +50,5 @@ XRB0204 = Class(CConstructionStructureUnit) {
         self.AnimationManipulator:SetRate(-1)
     end,
 }
-TypeClass = XRB0204
+
+TypeClass = XRB0304

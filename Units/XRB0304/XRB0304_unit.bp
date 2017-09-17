@@ -1,9 +1,9 @@
 UnitBlueprint {
     AI = {
-        GuardScanRadius = 20,
+        GuardScanRadius = 25,
         InitialAutoMode = true,
         ShowAssistRangeOnSelect = true,
-        StagingPlatformScanRadius = 20,
+        StagingPlatformScanRadius = 25,
     },
     Audio = {
         CaptureLoop = Sound {
@@ -13,7 +13,7 @@ UnitBlueprint {
         },
         Close = Sound {
             Bank = 'XRB',
-            Cue = 'XRB0204_Close',
+            Cue = 'XRB0304_Close',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         Construct = Sound {
@@ -32,13 +32,13 @@ UnitBlueprint {
             LodCutoff = 'UnitMove_LodCutoff',
         },
         DoneBeingBuilt = Sound {
-            Bank = 'XRB',
-            Cue = 'XRB0204_Activate',
+            Bank = 'URB',
+            Cue = 'URB3104_Activate',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         Open = Sound {
             Bank = 'XRB',
-            Cue = 'XRB0204_Open',
+            Cue = 'XRB0304_Open',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         ReclaimLoop = Sound {
@@ -88,20 +88,19 @@ UnitBlueprint {
     Defense = {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
-        EconomyThreatLevel = 6,
-        Health = 1250,
-        MaxHealth = 1250,
+        EconomyThreatLevel = 18,
+        Health = 2750,
+        MaxHealth = 2750,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC xrb0204_desc>Engineering Station',
+    Description = '<LOC xrb0304_desc>Engineering Station',
     Display = {
         Abilities = {
             '<LOC ability_engineeringsuite>Engineering Suite',
-            '<LOC ability_upgradable>Upgradeable',
         },
-        AnimationOpen = '/units/XRB0204/XRB0204_Aopen.sca',
+        AnimationOpen = '/units/XRB0304/XRB0304_Aopen.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -110,10 +109,10 @@ UnitBlueprint {
                     ShaderName = 'Unit',
                 },
                 {
-                    AlbedoName = 'xrb0204_lod1_albedo.dds',
+                    AlbedoName = 'xrb0304_lod1_albedo.dds',
                     LODCutoff = 215,
                     ShaderName = 'Unit',
-                    SpecularName = 'xrb0204_lod1_specteam.dds',
+                    SpecularName = 'xrb0304_lod1_specteam.dds',
                 },
             },
         },
@@ -139,15 +138,12 @@ UnitBlueprint {
         UniformScale = 0.05,
     },
     Economy = {
-        BuildCostEnergy = 4083.33,
-        BuildCostMass = 700,
-        BuildRate = 50,
+        BuildCostEnergy = 6416.66,
+        BuildCostMass = 1050,
+        BuildRate = 75,
         BuildTime = 1171,
-        BuildableCategory = {
-            'xrb0304',
-        },
         DifferentialUpgradeCostCalculation = true,
-        MaxBuildDistance = 20,
+        MaxBuildDistance = 25,
         RebuildBonusIds = {
             'xrb0104',
         },
@@ -162,6 +158,7 @@ UnitBlueprint {
             BuildEffectBones = {
                 'Attachpoint01',
                 'Attachpoint02',
+                'Attachpoint03',
             },
         },
 
@@ -197,10 +194,9 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ProductionToggle = true,
         },
-        UnitName = '<LOC xrb0204_name>The Hive',
+        UnitName = '<LOC xrb0304_name>The Hive',
         UnitWeight = 1,
-        UpgradesFrom = 'xrb0104',
-        UpgradesTo = 'xrb0304',
+        UpgradesFrom = 'xrb0204',
     },
     Intel = {
         VisionRadius = 15,
@@ -236,7 +232,7 @@ UnitBlueprint {
     SelectionSizeZ = 1,
     SelectionThickness = 0.4,
     SizeX = 1.2,
-    SizeY = 2,
+    SizeY = 2.6,
     SizeZ = 1.3,
     StrategicIconName = 'icon_structure2_engineer',
     StrategicIconSortPriority = 225,
