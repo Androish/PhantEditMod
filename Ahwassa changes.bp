@@ -1,0 +1,20 @@
+UnitBlueprint {
+    Merge = true,
+	BlueprintId = "xsa0402",						#Ahwassa
+    Weapon = {
+        {
+        },
+        {
+            Damage = 225,
+        },
+        {
+            Damage = 225,
+        },
+        {
+            Damage = 225,
+        },
+        {
+            Damage = 225,
+        },
+    },
+}
